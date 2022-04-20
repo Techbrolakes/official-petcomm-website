@@ -12,7 +12,7 @@ import {
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { Info } from "./components/Info";
+import Info from "./components/Info";
 
 const Home: NextPage = () => {
   return (
