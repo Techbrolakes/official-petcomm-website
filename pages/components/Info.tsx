@@ -5,7 +5,7 @@ import "swiper/css";
 import { Pagination, Autoplay } from "swiper";
 import type { NextPage } from "next";
 
-export const Info: NextPage = () => {
+const Info: NextPage = () => {
   return (
     <>
       <Box
@@ -67,3 +67,5 @@ export const Info: NextPage = () => {
     </>
   );
 };
+
+export default Info;
