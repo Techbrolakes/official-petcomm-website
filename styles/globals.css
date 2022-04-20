@@ -14,3 +14,34 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "ManropeRegular";
+  src: local("ManropeRegular"),
+    url("../public/fonts/Manrope/Manrope-Regular.ttf");
+}
+@font-face {
+  font-family: "ManropeMedium";
+  src: local("ManropeMedium"), url("../public/fonts/Manrope/Manrope-Medium.ttf");
+}
+@font-face {
+  font-family: "ManropeSemiBold";
+  src: local("ManropeSemiBold"),
+    url("../public/fonts/Manrope/Manrope-SemiBold.ttf");
+}
+@font-face {
+  font-family: "ManropeBold";
+  src: local("ManropeBold"), url("../public/fonts/Manrope/Manrope-Bold.ttf");
+}
+@font-face {
+  font-family: "NunitoLight";
+  src: local("NunitoLight"), url("../public/fonts/Nunito/Nunito-Light.ttf");
+}
+@font-face {
+  font-family: "NunitoRegular";
+  src: local("NunitoRegular"), url("../public/fonts/Nunito/Nunito-Regular.ttf");
+}
+@font-face {
+  font-family: "NunitoBold";
+  src: local("NunitoBold"), url("../public/fonts/Nunito/Nunito-Bold.ttf");
+}
