@@ -59,6 +59,8 @@ const Home: NextPage = () => {
       <Box>
         <Info />
       </Box>
+
+      <Box></Box>
     </Box>
   );
 };
