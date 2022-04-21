@@ -58,7 +58,7 @@ const Home: NextPage = () => {
                 Book A Free Consultancy
               </Button>
             </Box>
-            <Image src="/RightImage.png" alt="image" width="50%" />
+            <Image src="/try.png" alt="image" width="50%" />
           </Flex>
         </Stack>
 
