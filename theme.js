@@ -31,6 +31,16 @@ const theme = extendTheme({
       fontFamily: "NunitoRegular",
       color: "#36454F",
     },
+    xp: {
+      fontSize: ["14px", "15px", "21px", "22px"],
+      fontFamily: "NunitoRegular",
+      color: "#36454F",
+    },
+    xxp: {
+      fontSize: ["14px", "15px", "21px", "22px"],
+      fontFamily: "NunitoRegular",
+      color: "#ffffff",
+    },
     pp: {
       fontSize: ["14px", "15px", "16px", "17px"],
       fontFamily: "NunitoRegular",
