@@ -17,7 +17,7 @@ const theme = extendTheme({
       fontFamily: "ManropeRegular",
     },
     h6: {
-      fontSize: "25px",
+      fontSize: ["14px", "15px", "16px", "17px"],
       color: "#36454F",
       fontFamily: "NunitoBold",
     },

@@ -4,7 +4,12 @@ import { Box, Flex, Stack, Text } from "@chakra-ui/react";
 
 const AboutBox = () => {
   return (
-    <Box shadow="lg" width="350px" p="40px" textAlign="center">
+    <Box
+      shadow="lg"
+      width={{ base: "100%", lg: "350px" }}
+      p={{ base: "20px", lg: "40px" }}
+      textAlign="center"
+    >
       <Text textStyle="pp">
         We are your bridge to that technological break and innovative concept
         you seek in the digital and I.T space
@@ -19,7 +24,7 @@ const About: NextPage = () => {
       <Stack p="50px" bgImage="/bg.png">
         <Box textAlign="center">
           <Text textStyle="h11">Who Are We</Text>
-          <Text textStyle="pp" p="40px">
+          <Text textStyle="pp" p={{ base: "10px", lg: "40px" }}>
             With years of hands-on experience, our team of experts are very well
             acquainted with the challenges businesses and companies encounter
             and are committed to providing a positive ROI and increased
@@ -28,7 +33,10 @@ const About: NextPage = () => {
             ocean?
           </Text>
         </Box>
-        <Flex justifyContent="space-around">
+        <Flex
+          justifyContent={{ base: "space-between", lg: "space-around" }}
+          flexDir={{ base: "column", lg: "row" }}
+        >
           <AboutBox />
           <AboutBox />
           <AboutBox />

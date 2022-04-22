@@ -12,9 +12,14 @@ import React from "react";
 const Services = () => {
   return (
     <>
-      <Flex justifyContent="space-around" align="center" my="100px">
+      <Flex
+        justifyContent="space-around"
+        align="center"
+        my="100px"
+        flexDir={{ base: "column", lg: "row" }}
+      >
         <Image src="./Image.png" alt="image" />
-        <Box>
+        <Box my={{ base: "40px", lg: "0px" }}>
           <Text textStyle="h2" mb="20px">
             Services We Provide
           </Text>

@@ -14,6 +14,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import About from "./components/About";
 import Community from "./components/Community";
+import Footer from "./components/Footer";
 import Info from "./components/Info";
 import Project from "./components/Projects";
 import Services from "./components/Services";
@@ -36,7 +37,11 @@ const Home: NextPage = () => {
               textStyle="pp"
             >
               <Image src={"/logo.png"} alt="logo" />
-              <UnorderedList display="flex" gap="20px" listStyleType={"none"}>
+              <UnorderedList
+                gap="20px"
+                listStyleType={"none"}
+                display={{ base: "none", lg: "flex" }}
+              >
                 <ListItem>About</ListItem>
                 <ListItem>Services</ListItem>
                 <ListItem>Projects</ListItem>
@@ -58,7 +63,12 @@ const Home: NextPage = () => {
                 Book A Free Consultancy
               </Button>
             </Box>
-            <Image src="/try.png" alt="image" width="50%" />
+            <Image
+              src="/try.png"
+              alt="image"
+              width="50%"
+              display={{ base: "none", lg: "initial" }}
+            />
           </Flex>
         </Stack>
 
@@ -80,6 +90,10 @@ const Home: NextPage = () => {
 
         <Stack>
           <Community />
+        </Stack>
+
+        <Stack>
+          <Footer />
         </Stack>
       </Box>
     </Box>
