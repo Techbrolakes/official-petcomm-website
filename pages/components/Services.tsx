@@ -13,9 +13,10 @@ const Services = () => {
   return (
     <>
       <Flex
+        bgColor="#F9F9F9"
         justifyContent="space-around"
         align="center"
-        my="100px"
+        py="100px"
         flexDir={{ base: "column", lg: "row" }}
       >
         <Image src="./Image.png" alt="image" />

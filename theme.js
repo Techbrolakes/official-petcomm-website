@@ -3,7 +3,7 @@ import { extendTheme } from "@chakra-ui/react";
 const theme = extendTheme({
   textStyles: {
     h1: {
-      fontSize: ["40px", "45px", "50px", "60px"],
+      fontSize: ["40px", "45px", "62px", "72px"],
       fontFamily: "ManropeBold",
       color: "#36454F",
     },
@@ -28,6 +28,11 @@ const theme = extendTheme({
     },
     p: {
       fontSize: ["14px", "15px", "16px", "17px"],
+      fontFamily: "NunitoRegular",
+      color: "#36454F",
+    },
+    span: {
+      fontSize: ["14px", "17px", "22px", "25px"],
       fontFamily: "NunitoRegular",
       color: "#36454F",
     },

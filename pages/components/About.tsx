@@ -10,7 +10,7 @@ const AboutBox = () => {
       p={{ base: "20px", lg: "40px" }}
       textAlign="center"
     >
-      <Text textStyle="pp">
+      <Text textStyle="p">
         We are your bridge to that technological break and innovative concept
         you seek in the digital and I.T space
       </Text>
@@ -21,10 +21,10 @@ const AboutBox = () => {
 const About: NextPage = () => {
   return (
     <>
-      <Stack p="50px" bgImage="/bg.png">
+      <Stack p="50px" bgColor="#f9f9f9" py="100px">
         <Box textAlign="center">
-          <Text textStyle="h11">Who Are We</Text>
-          <Text textStyle="pp" p={{ base: "10px", lg: "40px" }}>
+          <Text textStyle="h1">Who Are We</Text>
+          <Text textStyle="span" p={{ base: "10px", lg: "40px" }}>
             With years of hands-on experience, our team of experts are very well
             acquainted with the challenges businesses and companies encounter
             and are committed to providing a positive ROI and increased
