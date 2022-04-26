@@ -1,12 +1,13 @@
 import { Modal, Button, Group } from "@mantine/core";
 import { Input, Box, Text } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Stack } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 
 const MessageModal = () => {
   const [opened, setOpened] = useState(false);
+  const form = useRef();
   const {
     register,
     handleSubmit,
@@ -20,6 +21,7 @@ const MessageModal = () => {
       .sendForm(
         "service_lj03gpe",
         "template_j5afu7ls",
+        form.current,
         "user_3KRheqFQrxmxuSlAVa2iW"
       )
       .then(
@@ -41,7 +43,7 @@ const MessageModal = () => {
         onClose={() => setOpened(false)}
         title="Book A Free Consultancy Today"
       >
-        <form onSubmit={FormSubmit}>
+        <form onSubmit={FormSubmit} ref={form}>
           <Stack spacing={8} textStyle="p">
             <Box>
               <Input name="Name" placeholder="Enter Name" />
