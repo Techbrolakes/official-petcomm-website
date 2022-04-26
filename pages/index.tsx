@@ -18,7 +18,7 @@ import {
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import styles from "../styles/Home.module.css";
+import { FadeLoader } from "react-spinners";
 import About from "./components/About";
 import Community from "./components/Community";
 import Footer from "./components/Footer";
@@ -33,7 +33,6 @@ const Home: NextPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 2000);
@@ -46,81 +45,92 @@ const Home: NextPage = () => {
         <meta name="description" content="Petcomm Official Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box>
-        <Stack bgImage={"./bbg.png"} pb="100px">
-          <Box px="5%">
-            <Flex
-              justifyContent="space-between"
-              alignItems="center"
-              py="20px"
-              textStyle="pWhit"
-            >
-              <Image
-                src={"/mainlogo.png"}
-                alt="logo"
-                width={{ base: "180px", lg: "220px" }}
-              />
-              <Menu>
-                <MenuButton
-                  as={IconButton}
-                  aria-label="Options"
-                  icon={<FaBars />}
+      {loading ? (
+        <Flex
+          bgImage={"./bbg.png"}
+          minH="100vh"
+          align="center"
+          justify="center"
+        >
+          <FadeLoader color="#ffffff" loading={loading} />
+        </Flex>
+      ) : (
+        <Box>
+          <Stack bgImage={"./bbg.png"} pb="100px">
+            <Box px="5%">
+              <Flex
+                justifyContent="space-between"
+                alignItems="center"
+                py="20px"
+                textStyle="pWhit"
+              >
+                <Image
+                  src={"/mainlogo.png"}
+                  alt="logo"
+                  width={{ base: "180px", lg: "220px" }}
                 />
-                <MenuList textStyle="p">
-                  <MenuItem icon={<FaMedal />}>Blog Page</MenuItem>
-                </MenuList>
-              </Menu>
-            </Flex>
+                <Menu>
+                  <MenuButton
+                    as={IconButton}
+                    aria-label="Options"
+                    icon={<FaBars />}
+                  />
+                  <MenuList textStyle="p">
+                    <MenuItem icon={<FaMedal />}>Blog Page</MenuItem>
+                  </MenuList>
+                </Menu>
+              </Flex>
+            </Box>
+            <Box textAlign="center" py="20px">
+              <Text
+                mx="auto"
+                width={{
+                  base: "100%",
+                  lg: "65%",
+                }}
+                textStyle="h11"
+              >
+                Digital Marketing Agency With A Swag
+              </Text>
+              <Text
+                width={{
+                  base: "100%",
+                  lg: "80%",
+                }}
+                textStyle="spanWhite"
+                my="30px"
+                mx="auto"
+                px="5px"
+              >
+                Yet bed any for travelling assistance indulgence unpleasing. Not
+                thoughts all exercise blessing. Indulgence way everything joy
+                alteration boisterous the attachment.
+              </Text>
+              <MessageModal />
+            </Box>
+          </Stack>
+
+          <Box>
+            <About />
           </Box>
-          <Box textAlign="center" py="20px">
-            <Text
-              mx="auto"
-              width={{
-                base: "100%",
-                lg: "65%",
-              }}
-              textStyle="h11"
-            >
-              Digital Marketing Agency With A Swag
-            </Text>
-            <Text
-              width={{
-                base: "100%",
-                lg: "80%",
-              }}
-              textStyle="spanWhite"
-              my="30px"
-              mx="auto"
-              px="5px"
-            >
-              Yet bed any for travelling assistance indulgence unpleasing. Not
-              thoughts all exercise blessing. Indulgence way everything joy
-              alteration boisterous the attachment.
-            </Text>
-            <MessageModal />
+
+          <Box>
+            <Info />
           </Box>
-        </Stack>
 
-        <Box>
-          <About />
+          <Stack>
+            <Services />
+          </Stack>
+
+          <Stack>
+            <Project />
+          </Stack>
+
+          <Stack>
+            <Community />
+          </Stack>
         </Box>
-
-        <Box>
-          <Info />
-        </Box>
-
-        <Stack>
-          <Services />
-        </Stack>
-
-        <Stack>
-          <Project />
-        </Stack>
-
-        <Stack>
-          <Community />
-        </Stack>
-      </Box>
+      )}
     </Box>
   );
 };

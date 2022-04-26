@@ -61,6 +61,11 @@ const theme = extendTheme({
       fontFamily: "NunitoRegular",
       color: "#fff",
     },
+    error: {
+      fontSize: ["14px"],
+      fontFamily: "NunitoRegular",
+      color: "red",
+    },
   },
   layerStyles: {
     container: {
