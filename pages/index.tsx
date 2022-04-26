@@ -9,6 +9,11 @@ import {
   Heading,
   Button,
   Skeleton,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  IconButton,
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -22,6 +27,7 @@ import Project from "./components/Projects";
 import Services from "./components/Services";
 import "react-loading-skeleton/dist/skeleton.css";
 import MessageModal from "./components/MessageModal";
+import { FaBars, FaMedal } from "react-icons/fa";
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(true);
@@ -41,32 +47,29 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box>
-        <Stack
-          bgImage="/header.png"
-          bgRepeat="no-repeat"
-          bgPos="top"
-          minH="100vh"
-          bgColor="#F9F9F9"
-        >
-          <Box pr="5%">
+        <Stack bgImage={"./bbg.png"} pb="100px">
+          <Box px="5%">
             <Flex
               justifyContent="space-between"
               alignItems="center"
               py="20px"
-              textStyle="p"
+              textStyle="pWhit"
             >
-              <Image src={"/logo.png"} alt="logo" />
-              <UnorderedList
-                gap="20px"
-                listStyleType={"none"}
-                display={{ base: "none", lg: "flex" }}
-              >
-                <ListItem>About</ListItem>
-                <ListItem>Services</ListItem>
-                <ListItem>Projects</ListItem>
-                <ListItem>Community</ListItem>
-                <ListItem>Contact</ListItem>
-              </UnorderedList>
+              <Image
+                src={"/mainlogo.png"}
+                alt="logo"
+                width={{ base: "180px", lg: "220px" }}
+              />
+              <Menu>
+                <MenuButton
+                  as={IconButton}
+                  aria-label="Options"
+                  icon={<FaBars />}
+                />
+                <MenuList textStyle="p">
+                  <MenuItem icon={<FaMedal />}>Blog Page</MenuItem>
+                </MenuList>
+              </Menu>
             </Flex>
           </Box>
           <Box textAlign="center" py="20px">
@@ -76,7 +79,7 @@ const Home: NextPage = () => {
                 base: "100%",
                 lg: "65%",
               }}
-              textStyle="h1"
+              textStyle="h11"
             >
               Digital Marketing Agency With A Swag
             </Text>
@@ -85,9 +88,10 @@ const Home: NextPage = () => {
                 base: "100%",
                 lg: "80%",
               }}
-              textStyle="span"
+              textStyle="spanWhite"
               my="30px"
               mx="auto"
+              px="5px"
             >
               Yet bed any for travelling assistance indulgence unpleasing. Not
               thoughts all exercise blessing. Indulgence way everything joy

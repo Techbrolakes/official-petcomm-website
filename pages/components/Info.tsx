@@ -7,11 +7,11 @@ import MessageModal from "./MessageModal";
 const Info: NextPage = () => {
   return (
     <>
-      <Box bgColor="#F9F9F9" py="100px">
+      <Box bgColor="#F9F9F9" py={{ base: "40px", lg: "100px" }}>
         <Box
-          padding="30px"
+          padding={{ base: "15px", lg: "30px" }}
           textAlign="center"
-          width="80%"
+          width={{ base: "90%", md: "85%", lg: "80%" }}
           mx="auto"
           bgColor="#fff"
           shadow="lg"

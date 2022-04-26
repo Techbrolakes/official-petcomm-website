@@ -8,7 +8,7 @@ const theme = extendTheme({
       color: "#36454F",
     },
     h11: {
-      fontSize: ["40px", "45px", "50px", "60px"],
+      fontSize: ["40px", "45px", "62px", "72px"],
       fontFamily: "ManropeBold",
       color: "#ffffff",
     },
@@ -18,7 +18,7 @@ const theme = extendTheme({
     },
     h6: {
       fontSize: ["14px", "15px", "16px", "17px"],
-      color: "#36454F",
+      color: "#fffff",
       fontFamily: "NunitoBold",
     },
     h66: {
@@ -31,10 +31,20 @@ const theme = extendTheme({
       fontFamily: "NunitoRegular",
       color: "#36454F",
     },
+    pWhite: {
+      fontSize: ["14px", "15px", "16px", "17px"],
+      fontFamily: "NunitoRegular",
+      color: "#ffffff",
+    },
     span: {
       fontSize: ["14px", "17px", "22px", "25px"],
       fontFamily: "NunitoRegular",
       color: "#36454F",
+    },
+    spanWhite: {
+      fontSize: ["14px", "17px", "22px", "25px"],
+      fontFamily: "NunitoRegular",
+      color: "#ffffff",
     },
     xp: {
       fontSize: ["14px", "15px", "21px", "22px"],

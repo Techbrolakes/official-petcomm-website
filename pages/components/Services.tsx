@@ -16,15 +16,17 @@ const Services = () => {
         bgColor="#F9F9F9"
         justifyContent="space-around"
         align="center"
-        py="100px"
+        py={{ base: "50px", lg: "50px" }}
         flexDir={{ base: "column", lg: "row" }}
       >
-        <Image src="./Image.png" alt="image" />
+        <Box>
+          <Image src="./Image.png" alt="image" width="fit-content" />
+        </Box>
         <Box my={{ base: "40px", lg: "0px" }}>
           <Text textStyle="h2" mb="20px">
             Services We Provide
           </Text>
-          <UnorderedList spacing="10px">
+          <UnorderedList spacing="10px" px="5px">
             <ListItem textStyle="xp">Digital Branding and Engagement</ListItem>
             <ListItem textStyle="xp">Social media management</ListItem>
             <ListItem textStyle="xp">Content marketing</ListItem>

@@ -5,7 +5,7 @@ import { Box, Flex, Stack, Text } from "@chakra-ui/react";
 const AboutBox = () => {
   return (
     <Box
-      shadow="lg"
+      shadow={{ base: "md", lg: "lg" }}
       width={{ base: "100%", lg: "350px" }}
       p={{ base: "20px", lg: "40px" }}
       textAlign="center"
@@ -21,7 +21,7 @@ const AboutBox = () => {
 const About: NextPage = () => {
   return (
     <>
-      <Stack p="50px" bgColor="#f9f9f9" py="100px">
+      <Stack bgColor="#f9f9f9" py={{ base: "50px", lg: "100px" }}>
         <Box textAlign="center">
           <Text textStyle="h1">Who Are We</Text>
           <Text textStyle="span" p={{ base: "10px", lg: "40px" }}>

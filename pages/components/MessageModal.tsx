@@ -1,45 +1,29 @@
-import {
-  Button,
-  Modal,
-  ModalOverlay,
-  ModalBody,
-  ModalFooter,
-  ModalContent,
-  useDisclosure,
-  ModalHeader,
-  ModalCloseButton,
-} from "@chakra-ui/react";
-import React from "react";
-
+import { Modal, Button, Group, Input } from "@mantine/core";
+import React, { useState } from "react";
+import { Stack } from "@chakra-ui/react";
 const MessageModal = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [opened, setOpened] = useState(false);
   return (
     <>
-      <Button
-        colorScheme="red"
-        textStyle="p"
-        shadow="lg"
-        p="25px"
-        onClick={onOpen}
+      <Modal
+        centered
+        size="md"
+        opened={opened}
+        onClose={() => setOpened(false)}
+        title="Book A Free Consultancy Today"
       >
-        Book A Free Consultancy
-      </Button>
-      <Modal onClose={onClose} isOpen={isOpen} isCentered>
-        <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>Modal Title</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            sunt porro explicabo, nobis eveniet recusandae accusantium accusamus
-            voluptas, fugit fuga repudiandae maiores delectus? Autem atque natus
-            possimus molestias, magnam dolorum?
-          </ModalBody>
-          <ModalFooter>
-            <Button onClick={onClose}>Close</Button>
-          </ModalFooter>
-        </ModalContent>
+        <Stack spacing={8} textStyle="p">
+          <Input placeholder="Enter Name" />
+          <Input placeholder="Enter Email" />
+          <Input placeholder="Enter Phone Number" />
+          <Button color="red">Book Now</Button>
+        </Stack>
       </Modal>
+      <Group position="center">
+        <Button size="lg" color="red" onClick={() => setOpened(true)}>
+          Book A Free Consultancy
+        </Button>
+      </Group>
     </>
   );
 };
