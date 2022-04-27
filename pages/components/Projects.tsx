@@ -14,7 +14,7 @@ const Project: NextPage = () => {
         layerStyle="container"
         textTransform="uppercase"
       >
-        <Text pb="1px" textStyle="h1">
+        <Text pb="1px" textStyle="h1" textAlign="center">
           Some Of Our Works
         </Text>
         <Swiper
