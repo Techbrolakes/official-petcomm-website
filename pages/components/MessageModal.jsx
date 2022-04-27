@@ -3,24 +3,18 @@ import { Input, Box, Text } from "@chakra-ui/react";
 import React, { useState, useRef } from "react";
 import { Stack } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const MessageModal = () => {
   const [opened, setOpened] = useState(false);
   const form = useRef();
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
 
-  const FormSubmit = function sendEmail(e) {
+  const FormSubmit = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
         "service_lj03gpe",
-        "template_j5afu7ls",
+        "template_ayf1k4m",
         form.current,
         "user_3KRheqFQrxmxuSlAVa2iW"
       )

@@ -10,11 +10,11 @@ const Project: NextPage = () => {
     <>
       <Box
         bgColor="#F9F9F9"
-        py="50px"
+        pb="10px"
         layerStyle="container"
         textTransform="uppercase"
       >
-        <Text pb="30px" textStyle="h2">
+        <Text pb="1px" textStyle="h1">
           Some Of Our Works
         </Text>
         <Swiper
