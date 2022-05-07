@@ -17,27 +17,38 @@ const Services = () => {
         justifyContent="space-around"
         align="center"
         py={{ base: "50px", lg: "50px" }}
-        flexDir={{ base: "column", lg: "row" }}
+        flexDir={{ base: "column", lg: "column" }}
       >
-        <Box>
+        <Box mb="20px">
           <Image src="./Image.png" alt="image" width="fit-content" />
         </Box>
-        <Box my={{ base: "40px", lg: "0px" }}>
-          <Text textStyle="h2" mb="20px">
+        <Box my={{ base: "40px", lg: "0px" }} textAlign="center">
+          <Text textStyle="h2" mb="50px">
             Services We Provide
           </Text>
-          <UnorderedList spacing="10px" px="5px">
-            <ListItem textStyle="xp">Digital Branding and Engagement</ListItem>
-            <ListItem textStyle="xp">Social media management</ListItem>
-            <ListItem textStyle="xp">Content marketing</ListItem>
-            <ListItem textStyle="xp">Online campaigns and ads.</ListItem>
-            <ListItem textStyle="xp">Graphics design and illustration</ListItem>
-            <ListItem textStyle="xp">Web design and development</ListItem>
-            <ListItem textStyle="xp">Brand management and consultancy</ListItem>
-            <ListItem textStyle="xp">Copywriting</ListItem>
-            <ListItem textStyle="xp">Content creation </ListItem>
-            <ListItem textStyle="xp">Social media marketing</ListItem>
-          </UnorderedList>
+
+          <Flex
+            flexDir={{ base: "column", lg: "row" }}
+            justify="space-between"
+            textAlign="center"
+            px={"5%"}
+            gap="20px"
+          >
+            <Box bgColor="#fff" shadow="md" borderRadius="10px" p="40px">
+              <Text textStyle="span">Digital & I.T Solutions</Text>
+            </Box>
+            <Box bgColor="#fff" shadow="md" borderRadius="10px" p="40px">
+              <Text textStyle="span">Brand Consultancy & Management</Text>
+            </Box>
+            <Box bgColor="#fff" shadow="md" borderRadius="10px" p="40px">
+              <Text textStyle="span">
+                Social Media & Graphics(illustration/design)
+              </Text>
+            </Box>
+            <Box bgColor="#fff" shadow="md" borderRadius="10px" p="40px">
+              <Text textStyle="span">Content Creation & Copywriting</Text>
+            </Box>
+          </Flex>
         </Box>
       </Flex>
     </>

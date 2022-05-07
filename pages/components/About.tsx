@@ -25,12 +25,12 @@ const About: NextPage = () => {
         <Box textAlign="center">
           <Text textStyle="h1">Who Are We</Text>
           <Text textStyle="span" p={{ base: "10px", lg: "40px" }}>
-            With years of hands-on experience, our team of experts are very well
-            acquainted with the challenges businesses and companies encounter
-            and are committed to providing a positive ROI and increased
-            productivity that are cost effective and pocket friendly. So, who
-            would you rather be, the shark of the ocean or the fish of the
-            ocean?
+            With years of hands-on experience, our team? of experts are very
+            well acquainted with the challenges businesses and companies
+            encounter and are committed to providing a positive ROI and
+            increased productivity that are cost effective and pocket friendly.
+            So, who would you rather be, the shark of the ocean or the fish of
+            the ocean?
           </Text>
         </Box>
         <Flex

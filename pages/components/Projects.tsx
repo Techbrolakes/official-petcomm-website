@@ -9,6 +9,7 @@ const Project: NextPage = () => {
   return (
     <>
       <Box
+        pt="60px"
         bgColor="#F9F9F9"
         pb="10px"
         layerStyle="container"

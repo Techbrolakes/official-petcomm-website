@@ -19,10 +19,8 @@ const Info: NextPage = () => {
         >
           <Text textStyle="h2"> Book A free Consultancy with Us</Text>
           <Text textStyle="p" my="10px">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            vitae eaque, optio iste nihil obcaecati ullam esse expedita facere
-            nobis nam quam dolorem dolore, iure officia similique natus
-            doloribus? Voluptates.
+            We are your bridge to that technological break and innovative
+            concept you seek in the digital and I.T space
           </Text>
           <MessageModal />
         </Box>

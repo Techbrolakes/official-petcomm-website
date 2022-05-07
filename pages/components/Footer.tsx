@@ -24,7 +24,7 @@ const Footer: NextPage = () => {
           </Button>
         </Flex>
         <Text textAlign="center" textStyle="pWhite" py="10px">
-          Website Built By Lekan Dar
+          &copy; Petcomm 2022
         </Text>
       </Box>
     </>

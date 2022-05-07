@@ -102,9 +102,8 @@ const Home: NextPage = () => {
                 mx="auto"
                 px="5px"
               >
-                Yet bed any for travelling assistance indulgence unpleasing. Not
-                thoughts all exercise blessing. Indulgence way everything joy
-                alteration boisterous the attachment.
+                We are your bridge to that technological break and innovative
+                concept you seek in the digital and I.T space
               </Text>
               <MessageModal />
             </Box>

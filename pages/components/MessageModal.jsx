@@ -1,5 +1,5 @@
 import { Modal, Button, Group } from "@mantine/core";
-import { Input, Box, Text } from "@chakra-ui/react";
+import { Input, Box, Textarea } from "@chakra-ui/react";
 import React, { useState, useRef } from "react";
 import { Stack } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
@@ -11,6 +11,7 @@ const MessageModal = () => {
 
   const FormSubmit = (e) => {
     e.preventDefault();
+    setOpened(false);
     emailjs
       .sendForm(
         "service_lj03gpe",
@@ -27,6 +28,9 @@ const MessageModal = () => {
         }
       );
     e.target.reset();
+    alert(
+      "Information has been submitted and we will be in touch with you very soon"
+    );
   };
   return (
     <Box textStyle="p">
@@ -49,6 +53,10 @@ const MessageModal = () => {
 
             <Box>
               <Input name="Phone" placeholder="Enter Phone Number" />
+            </Box>
+
+            <Box>
+              <Textarea name="Information" placeholder="Enter Message" />
             </Box>
 
             <Button type="submit" color="red">
