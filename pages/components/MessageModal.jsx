@@ -44,19 +44,23 @@ const MessageModal = () => {
         <form onSubmit={FormSubmit} ref={form}>
           <Stack spacing={8} textStyle="p">
             <Box>
-              <Input name="Name" placeholder="Enter Name" />
+              <Input name="Name" placeholder="Enter Name" required />
             </Box>
 
             <Box>
-              <Input name="Email" placeholder="Enter Email" />
+              <Input name="Email" placeholder="Enter Email" required />
             </Box>
 
             <Box>
-              <Input name="Phone" placeholder="Enter Phone Number" />
+              <Input name="Phone" placeholder="Enter Phone Number" required />
             </Box>
 
             <Box>
-              <Textarea name="Information" placeholder="Enter Message" />
+              <Textarea
+                name="Information"
+                placeholder="Enter Message"
+                required
+              />
             </Box>
 
             <Button type="submit" color="red">
