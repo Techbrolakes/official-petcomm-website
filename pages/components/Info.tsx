@@ -19,7 +19,7 @@ const Info: NextPage = () => {
         >
           <Text textStyle="h2"> Book A free Consultancy with Us</Text>
           <Text textStyle="p" my="10px">
-            We are your bridge to that technological break and innovative
+            We are your bridge between that technological break and innovative
             concept you seek in the digital and I.T space
           </Text>
           <MessageModal />

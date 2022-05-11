@@ -10,6 +10,23 @@ import {
 import React from "react";
 
 const Services = () => {
+  const service = [
+    {
+      name: "Digital & I.T Solutions",
+    },
+    {
+      name: "Brand Consultancy & Management",
+    },
+    {
+      name: "Social Media & Graphics (illustration / design)",
+    },
+    {
+      name: "Content Creation & Copywriting",
+    },
+    {
+      name: "Online Campaigns & ads",
+    },
+  ];
   return (
     <>
       <Flex
@@ -31,23 +48,21 @@ const Services = () => {
             flexDir={{ base: "column", lg: "row" }}
             justify="space-between"
             textAlign="center"
-            px={"5%"}
             gap="20px"
+            px={"5%"}
           >
-            <Box bgColor="#fff" shadow="md" borderRadius="10px" p="40px">
-              <Text textStyle="span">Digital & I.T Solutions</Text>
-            </Box>
-            <Box bgColor="#fff" shadow="md" borderRadius="10px" p="40px">
-              <Text textStyle="span">Brand Consultancy & Management</Text>
-            </Box>
-            <Box bgColor="#fff" shadow="md" borderRadius="10px" p="40px">
-              <Text textStyle="span">
-                Social Media & Graphics(illustration/design)
-              </Text>
-            </Box>
-            <Box bgColor="#fff" shadow="md" borderRadius="10px" p="40px">
-              <Text textStyle="span">Content Creation & Copywriting</Text>
-            </Box>
+            {service.map((eachService) => (
+              <Box
+                w={"60"}
+                bgColor="#fff"
+                shadow="md"
+                borderRadius="10px"
+                p="30px"
+                key={eachService.name}
+              >
+                <Text textStyle="span">{eachService.name}</Text>
+              </Box>
+            ))}
           </Flex>
         </Box>
       </Flex>

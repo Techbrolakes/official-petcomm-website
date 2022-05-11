@@ -102,8 +102,8 @@ const Home: NextPage = () => {
                 mx="auto"
                 px="5px"
               >
-                We are your bridge to that technological break and innovative
-                concept you seek in the digital and I.T space
+                We brand, you trend, through our aesthetically pleasing visual
+                representation and brand management consultancy services
               </Text>
               <MessageModal />
             </Box>

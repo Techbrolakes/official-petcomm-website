@@ -14,7 +14,7 @@ const Community: NextPage = () => {
           <Text textStyle="h11">Join Our Community</Text>
           <Text textStyle="spanWhite" p={{ base: "20px", lg: "50px" }}>
             Join our ever expanding community of vibrant and enterprising
-            individuals to gain access to exclusive contents on high income
+            individuals to gain access to exclusive content on high income
             skills. Be a petcomm-er today!.
           </Text>
           <Button
