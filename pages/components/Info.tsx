@@ -17,11 +17,11 @@ const Info: NextPage = () => {
           shadow="lg"
           borderRadius="2xl"
         >
-          <Text textStyle="h2"> Book A free Consultancy with Us</Text>
-          <Text textStyle="p" my="10px">
-            We are your bridge between that technological break and innovative
-            concept you seek in the digital and I.T space
+          <Text textStyle="h2" mb="20px">
+            {" "}
+            Book A free Consultancy with Us
           </Text>
+
           <MessageModal />
         </Box>
       </Box>

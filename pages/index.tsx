@@ -83,27 +83,16 @@ const Home: NextPage = () => {
             </Box>
             <Box textAlign="center" py="20px">
               <Text
+                textTransform={"capitalize"}
+                mb="20px"
                 mx="auto"
                 width={{
                   base: "100%",
-                  lg: "65%",
+                  lg: "90%",
                 }}
                 textStyle="h11"
               >
-                Digital Marketing Agency With A Swag
-              </Text>
-              <Text
-                width={{
-                  base: "100%",
-                  lg: "80%",
-                }}
-                textStyle="spanWhite"
-                my="30px"
-                mx="auto"
-                px="5px"
-              >
-                We brand, you trend, through our aesthetically pleasing visual
-                representation and brand management consultancy services
+                Digital and Creative Agency with some panache
               </Text>
               <MessageModal />
             </Box>
