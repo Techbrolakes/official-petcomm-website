@@ -5,6 +5,7 @@ import {
   BrandLinkedin,
   BrandWhatsapp,
   BrandFacebook,
+  BrandInstagram,
 } from "tabler-icons-react";
 import { Button } from "@mantine/core";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -29,12 +30,17 @@ const Footer: NextPage = () => {
             +2347054294179
           </Button>
           <Button mx="10px" size="sm" leftIcon={<BrandWhatsapp size={20} />}>
-            <a href="https://wa.me/+2347069217291?text=Hi,%20Lekan%20Dar%20I%20love%20your%20works">
+            <a href="https://wa.me/+2347054294179?text=Hi,%20Petcomm">
               WhatsApp
             </a>
           </Button>
           <Button mx="10px" size="sm" leftIcon={<BrandFacebook size={20} />}>
-            Facebook
+            <a href="https://www.facebook.com/petcomm.xyz">Facebook</a>
+          </Button>
+          <Button mx="10px" size="sm" leftIcon={<BrandInstagram size={20} />}>
+            <a href="https://instagram.com/petcomm.xyz?igshid=YmMyMTA2M2Y=">
+              Instagram
+            </a>
           </Button>
         </Flex>
         <Text textAlign="center" textStyle="pWhite" py="10px">
